@@ -24,7 +24,6 @@ $(document).on("keydown", function(e){
       })
       .slideDown(2000)
     }
-    
 });
 
 
