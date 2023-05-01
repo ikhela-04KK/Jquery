@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jquery test</title>
+<html>
 
-  <!--link for css file   -->
-  <link rel="stylesheet" rel="jyles.css" />
-  
+<head>
+  <title>ikhela</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <h1>HOMES</h1>
-  <h1>CONTACTS</h1>
+  <h2>Filterable Table</h2>
+  <p>Type something in the input field to search the table for first names, last names or emails:</p>
+  <input id="myInput" type="text" placeholder="Search..">
+  <br><br>
 
-  <button>click</button>
-  <button>click</button>
-  <button>click</button>
-  <button>click</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@mail.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@greatstuff.com</td>
+      </tr>
+      <tr>
+        <td>Anja</td>
+        <td>Ravendale</td>
+        <td>a_r@test.com</td>
+      </tr>
+    </tbody>
+  </table>
 
+  <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
 
-
-
-
-  <!--cdn for jquery  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-  <!-- js file  -->
-  <script src="jindex.js"></script>
-  
+  <script src="main.js"></script>
 </body>
+
+</html></body>
+
+</html></body>
+
 </html>

@@ -22,9 +22,14 @@ $(document).on("keydown", function(e){
         $("h1").text(`Bienvenue ${user}`)
         write ="";
       })
-      .slideDown(2000)
+      .slideDown(2000,function(){
+        $("h1").parents().css("backgroundColor", "grey")
+      })  // mettre le body à rouge parès le slideDown de 2000s 
     }
 });
+//  parents(): pour determiner le parent d'un élément
+//  parents("ul"): pour determiner un parent spécifique de l'élément spécifique 
+//  parentUntil("div"): pour tous les éléments entre l'élément initial et l'élément indiqué
 
 
 
